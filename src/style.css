@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 77px;
+    margin-right: 77px;
+    margin-top: 24px;
+}
+
+header {
+    color: #333;
+    font-family: Inconsolata;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.92px;
+    text-transform: uppercase;
+}
+
+section {
+    display: flex;
+    margin-top: 200px;
+    width: 100%;
+}
+
+#sectionImage {
+    width: 50%;
+}
+
+img {
+    display: block;
+    flex-shrink: 0;
+    height: 447.426px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 539.224px;
+}
+
+#sectionContain {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+h1 {
+    color: var(--gray-1, #333);
+    font-family: Space Mono;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -2.24px;
+    width: 586px;
+}
+
+p {
+    color: var(--gray-2, #4f4f4f);
+    font-family: Space Mono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    margin-top: 36px;
+    width: 381px;
+}
+
+button {
+    background: var(--gray-1, #333);
+    border: none;
+    color: #fff;
+    flex-shrink: 0;
+    font-family: Space Mono;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    height: 68px;
+    letter-spacing: -0.49px;
+    line-height: normal;
+    margin-top: 64px;
+    text-transform: uppercase;
+    width: 216px;
+}
+
+footer {
+    bottom: 24px;
+    color: #bdbdbd;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    position: fixed;
+    width: 100%;
+}
+
+span {
+    color: #bdbdbd;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration-line: underline;
+}
