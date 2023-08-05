@@ -3,11 +3,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: content-box;
 }
 
 body {
-    margin-left: 77px;
-    margin-right: 77px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 24px;
 }
 
@@ -19,12 +21,15 @@ header {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -1.92px;
+    margin-left: 77px;
     text-transform: uppercase;
 }
 
 section {
     display: flex;
-    margin-top: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 0;
     width: 100%;
 }
 
@@ -34,11 +39,10 @@ section {
 
 img {
     display: block;
-    flex-shrink: 0;
-    height: 447.426px;
     margin-left: auto;
     margin-right: auto;
-    width: 539.224px;
+    max-width: 560px;
+    width: 100%;
 }
 
 #sectionContain {
@@ -55,7 +59,8 @@ h1 {
     font-weight: 700;
     line-height: normal;
     letter-spacing: -2.24px;
-    width: 586px;
+    width: 75%;
+    max-width: 586px;
 }
 
 p {
@@ -88,7 +93,6 @@ button {
 }
 
 footer {
-    bottom: 24px;
     color: #bdbdbd;
     text-align: center;
     font-family: Montserrat;
@@ -96,7 +100,6 @@ footer {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    position: fixed;
     width: 100%;
 }
 
@@ -108,4 +111,46 @@ span {
     font-weight: 700;
     line-height: normal;
     text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin-top: 24px;
+    }
+
+    header {
+        margin-left: 10%;
+    }
+
+    section {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 64px 0;
+        width: 100%;
+    }
+
+    img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        letter-spacing: -0.035em;
+    }
+
+    h1 {
+        font-size: 3em;
+        letter-spacing: -0.035em;
+        width: 100%;
+    }
+
+    #sectionImage {
+        width: 75%;
+    }
 }
